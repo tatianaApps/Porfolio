@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_r">
+
+    <ImageView
+        android:id="@+id/ivLed"
+        android:layout_width="@dimen/image_size2"
+        android:layout_height="@dimen/image_size2"
+        android:layout_margin="@dimen/start_margin"
+        android:src="@drawable/ribon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLedStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/start_margin_title"
+        android:fontFamily="@font/dosis"
+        android:text="@string/led_status_tv"
+        android:textAlignment="center"
+        android:textSize="@dimen/led_status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivLed" />
+
+    <Button
+        android:id="@+id/btnOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/start_margin_title"
+        android:fontFamily="@font/dosis"
+        android:text="@string/led_status_on"
+        android:textSize="@dimen/text_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLedStatus" />
+
+    <Button
+        android:id="@+id/btnOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/start_margin_title"
+        android:fontFamily="@font/dosis"
+        android:text="@string/led_status_off"
+        android:textSize="@dimen/text_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnOn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
