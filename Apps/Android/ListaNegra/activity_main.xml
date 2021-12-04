@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_text"
+        android:fontFamily="@font/blackrose"
+        android:text="@string/title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
+        android:src="@drawable/title"
+        app:layout_constraintBottom_toBottomOf="@id/tvTitulo"
+        app:layout_constraintStart_toEndOf="@id/tvTitulo"
+        app:layout_constraintTop_toTopOf="@id/tvTitulo" />
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_edit_text"
+        android:fontFamily="@font/redresed"
+        android:hint="@string/name_hint"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitulo" />
+
+    <EditText
+        android:id="@+id/etEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_edit_text"
+        android:fontFamily="@font/redresed"
+        android:hint="@string/age_hint"
+        android:inputType="number"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etNombre" />
+
+    <EditText
+        android:id="@+id/etOfensa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_edit_text"
+        android:fontFamily="@font/redresed"
+        android:hint="@string/offense_hint"
+        android:inputType="text"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etEdad" />
+
+    <Button
+        android:id="@+id/btnAniadirEnemigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_button"
+        android:fontFamily="@font/achafont"
+        android:text="@string/text_button"
+        android:textSize="@dimen/text_button_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etOfensa" />
+
+    <ListView
+        android:id="@+id/lvListaNombres"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_view_heigth"
+        android:layout_marginTop="@dimen/list_view_margin_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAniadirEnemigo"
+        tools:listitem="@layout/celda_avanzada" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

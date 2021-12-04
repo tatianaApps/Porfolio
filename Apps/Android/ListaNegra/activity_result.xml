@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+    <ImageView
+        android:id="@+id/ivTopImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/back_image_height"
+        android:src="@drawable/fondo1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDatosEnemigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_result_margin_start"
+        android:layout_marginEnd="@dimen/text_result_margin_end"
+        android:fontFamily="@font/redresed"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_result_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivTopImage" />
+
+    <ImageView
+        android:layout_width="@dimen/image_ryuk_width"
+        android:layout_height="@dimen/image_ryuk_height"
+        android:layout_marginBottom="@dimen/image_ryuk_margin_bottom"
+        android:src="@drawable/ryuk"
+        app:layout_constraintBottom_toBottomOf="@id/ivBottomImage"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivBottomImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/back_image_height"
+        android:src="@drawable/fondo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

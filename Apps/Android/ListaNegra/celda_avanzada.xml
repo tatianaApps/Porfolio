@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivImagenEnemigo"
+        android:layout_width="@dimen/celda_layout_width"
+        android:layout_height="@dimen/celda_layout_height"
+        android:layout_marginStart="@dimen/celda_margin_start"
+        android:src="@drawable/note"
+        app:layout_constraintBottom_toBottomOf="@id/tvNombreEnemigo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvNombreEnemigo" />
+
+    <TextView
+        android:id="@+id/tvNombreEnemigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/celda_text_margin"
+        android:fontFamily="@font/redresed"
+        android:text="@string/celda_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/celda_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivImagenEnemigo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

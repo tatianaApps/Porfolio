@@ -1,0 +1,3 @@
+Aplicación realizada en Android donde trabajamos con un registro de enemigos donde introducimos nombre, edad y ofensa, y se añade a una lista donde se muestren los nombres, y al pulsar, te lleva a otra pantalla, donde se ve por completo sus datos. Se realizó utilizando arrayAdapter y guardando los datos en preferencias.
+
+
