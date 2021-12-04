@@ -1,0 +1,5 @@
+Aplicación realizada en Android donde tenemos un login y registro junto a una calculadora.
+Incluye una pantalla de 'He olvidado la contraseña' y un home donde se abre la calculadora realizada.
+Incluye un menú lateral, donde también tenemos dos secciones, donde nos conectamos con una API y podemos ver una lista de cantantes.
+A su vez, también incluye una pantalla, donde podemos modificar los datos del usuario y cerrar sesión.
+
