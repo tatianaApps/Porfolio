@@ -1,0 +1,4 @@
+Página web de gestor de librerías donde podemos crear un catálogo de libros.
+Se podrán ir registrando libros por nombre, autor, año de publicación, sinopsis, añadir una calificación y unas notas personales.
+A su vez, se pueden filtrar los libros y buscarlos por su nombre. También se puede ocultar la lista completa y ordenarla por título y autor.
+En último lugar, también se pueden editar los datos de los libros.
