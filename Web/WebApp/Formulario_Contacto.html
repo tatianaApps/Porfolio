@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Formulario Contacto</title>
+		<link rel="icon" type="Images/iconoYana.png" href="Images/iconoYana.png">
+    	<link rel="stylesheet" type="text/css" href="Estilos/estiloFormulario.css">
+        <link href="Fontawesome/css/all.css" rel="stylesheet">
+	</head>
+    <body>
+        <header>
+            <ul class="barra">
+                <li><a class="barraNav" href="Web_APP.html">Página principal</a></li>
+                <li><a class="barraNav" href="Nosotros_APP.html">Sobre nosotros</a></li>
+                <li><a class="barraNav" href="Terminos_Y_Condiciones.html">Términos y condiciones</a></li>
+                <li><a class="barraNav" href="Informacion_%20Legal.html">Información Legal</a></li>
+            </ul>
+			<center><h1>Contacta con nosotros</h1></center>
+            <center><h2>Queremos escucharte<img class="logo" src="Images/contacto.png"/></h2></center>
+		</header>
+        <center><table>
+                <thead>
+                    <tr>
+                        <th colspan="6">Datos de Contacto:</th>   
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7">Puedes contactar con nosotros y enviarnos tus mensajes de 9:00 AM a 18:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td class="contacto"><a href="tel:+0567168894"><i class="fas fa-phone-alt"></i>056 716 8894</a></td>
+                    </tr>
+                    <tr>
+                        <td class="contacto"><a href="mailto:yanaFicticio@yana.com"><i class="far fa-envelope"></i>yanaFicticio@yana.com</a></td>
+                    </tr>
+                </tbody>
+        </table></center>
+        <br>
+        <br>
+        <form action="http://profesor.alumnoscev.es/mail.php" method="post" id="Formulario">
+            <center><table>
+                <thead>
+                    <tr>
+                        <th colspan="6">Formulario de Contacto:</th>   
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><label for="input-nombre">Nombre *</label></td>
+                    </tr>
+                    <tr>
+                        <td><input id="input-nombre" type="text" name="nombre" placeholder="Introduce tu nombre" class="sinborde" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="input-nombre">Apellidos</label></td>
+                    </tr>
+                    <tr>
+                        <td><input id="input-nombre" type="text" name="apellidos" placeholder="Introduce tus apellidos" class="sinborde"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="input-email">Correo electrónico *</label></td>
+                    </tr>
+                    <tr>
+                        <td><input id="input-email" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Introduce tu email" style="width: 300px"class="sinborde" required=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for="input-telefono">Teléfono</label></td>
+                    </tr>
+                    <tr>
+                        <td><input id="input-telefono" type="telefono" name="telefono" pattern="[0-9]{9}" placeholder="Introduce tu teléfono de 9 dígitos" style="width: 200px"class="sinborde"></td>  
+                    </tr>    
+                    <tr>
+                        <td colspan="2">Escríbenos tu mensaje:</td>
+                    </tr>
+                    <tr>
+                        <td class="comentario" colspan="2"><textarea for="comentario" name="mensaje" class="sinborde" rows="7" cols="30" style="width: 100%" required=""></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="acepta" id="aceptar-terminos" required><label for="aceptar-terminos">Acepto los <a class="terminos" href="Terminos_Y_Condiciones.html" target="_blank">términos y condiciones *</a></label></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input id="destinatario"  type="hidden" name="destinatario" value="tatiana_26_16@outlook.com">
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Enviar" class="sinborde"></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table></center>
+        </form>
+        <footer>
+        <small>&copy; Copyright 2020, Tatiana López</small>
+    </footer>
+    </body>
+</html>
