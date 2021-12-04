@@ -1,0 +1,2 @@
+Aplicación realizada en Android donde en la primera pantalla introducimos nombre y fecha de nacimiento válida, entonces pasamos a una segunda pantalla donde a través de tu primera letra de tu primer apellido y tu mes de nacimiento, se mostrará un nombre de pueblo u otro, al igual que dos imágenes aleatorias.
+Esto se ha realizado gracias al uso de Hashmap.
