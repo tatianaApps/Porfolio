@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gestor de libros</title>
+	<link rel="icon" type="Images/book.png" href="Images/foto12.jpg">
+    <link rel="stylesheet" type="text/css" href="Estilos/estiloGestorLibros.css">
+    <link href="Fontawesome/css/all.css" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta charset="utf8">
+</head>
+	<body>
+		<center><h1>GESTOR DE LIBROS</h1>
+		<button onclick="cambiarVisibilidad();">Ocultar lista</button>
+		<button onclick="mostrarPanel(false, -1);">Agregar libro</button></center>
+		<div id="panel" style="display:none">
+			<div id="panel-content">
+				<span>X</span>
+				<center><table>
+                <tbody>
+                    <tr>
+                        <td><label for="input-titulo">Título del libro:</label></td>
+                    </tr>
+                    <tr>
+                        <td><input id="input-titulo" type="text" required=""></td>
+                    </tr>
+					<tr>
+                        <td><label for="input-autor">Nombre del autor:</label></td>
+                    </tr>
+                    <tr>
+                        <td><input id="input-autor" type="text" required=""></td>
+                    </tr>
+					<tr>
+                        <td><label for="input-publicacion">Año de publicación:</label></td>
+                    </tr>
+                    <tr>
+                        <td><input id="input-publicacion" type="text" required pattern="[0-9]{4}"></td>
+                    </tr>
+					<tr>
+                        <td><label for="input-sinopsis">Sinopsis:</label></td>
+                    </tr>
+                    <tr>
+                        <td><textarea id="input-sinopsis" rows="3" type="text" cols="30" style="width: 100%" required=""></textarea></td>
+                    </tr>
+					<tr>
+                        <td><label for="input-calificacion">Calificación:</label></td>
+                    </tr>
+                    <tr>
+                        <td><div required=""><i class="starrr"></i><input id="input-calificacion" type="text" required pattern="[0-9]{1}"></input></div></td>
+                    </tr>
+					<tr>
+                        <td><label for="input-notas">Notas personales</label></td>
+                    </tr>
+                    <tr>
+                        <td><textarea id="input-notas" rows="3" cols="30"  style="width: 100%" type="text" required pattern="[A-Za-z]"></textarea></td>
+                    </tr>
+				</tbody>
+			</table>
+				<button onclick="registrarLibro();" type="submit">Guardar libro</button>
+				<button id="btnBorrar" onclick="borrarLibro();">Borrar</button></center>
+			</div>
+		</div>
+		<center><h2>Libros añadidos:</h2>
+		<input type="text" id="filtro" name="filtro" placeholder="Filtrar por nombre"><button class="btnSearch" onclick="mostrarDatos();"><i class="fas fa-search"></i></button>
+		<br>
+		<center><table id="table">
+			<thead id="cabecera">
+				<tr>
+					<th id="th" data-campo="titulo">Título del libro</th>
+					<th id="th" data-campo="autor">Nombre del autor</th>
+					<th id="th" data-campo="publicacion">Año de publicación</th>
+					<th id="th" data-campo="calificacion">Calificación</th>
+					<th>Editar datos</th>
+				</tr>
+			</thead>
+			<tbody id="listaLibros">
+				
+			</tbody>
+		</table></center>
+		<p>Cargas de la página: <span id="recargas"></span></p></center>
+	</body>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="starrr.min.js"></script>
+	<script src="scriptGestorLibros.js"></script>
+</html>
