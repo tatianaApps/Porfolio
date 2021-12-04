@@ -3,4 +3,4 @@ Incluye una pantalla de 'He olvidado la contraseña' y un home donde se abre la 
 Incluye un menú lateral, donde también tenemos dos secciones, donde nos conectamos con una API y podemos ver una lista de cantantes.
 A su vez, también incluye una pantalla, donde podemos modificar los datos del usuario y cerrar sesión.
 Lo he realizado creando Fragments, sacando y conectando con datos de una API y usando Dialogs para el proceso de cierre de sesión.
-
+Para su funcionamiento he utilizado clases Request y Response, así como clases modelo y adaptadores.
