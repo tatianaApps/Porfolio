@@ -1,0 +1,4 @@
+Aplicación realizada en Android donde se tiene un login y registro funcional que es realizado por peticiones externas con una Raspberry.
+Usando fragments, se da la bienvenida al usuario, con los datos pasados y se usan preferencias para mantenerlo activo.
+También en el home se puede seleccionar cámara o galería para añadir una foto de usuario.
+A su vez, tiene un menú lateral donde hay una sección en la aplicación, donde pulsando en un botón y estando conectado a una Raspberry, se puede apagar y encender un LED.
